@@ -1,12 +1,23 @@
 require 'sinatra'
 require 'feedzirra'
-require 'flickraw'
+require 'fleakr'
 
-FlickRaw.api_key="86f6c95a16cf6cdcac6451dbcecc277b"
-FlickRaw.shared_secret="cb480187baea7c95"
+Fleakr.api_key="86f6c95a16cf6cdcac6451dbcecc277b"
+# Fleakr.shared_secret="cb480187baea7c95"
+
+helpers do
+    def partial (template, locals = {})
+      erb(template, :layout => false, :locals => locals)
+    end
+end
+
+before do
+    get_feed
+    get_photos
+end
 
 get '/' do
-  erb :index
+    erb :index
 end
 
 get '/about' do
@@ -18,22 +29,27 @@ get '/events' do
 end
 
 get '/photos' do
-    kadyn = flickr.people.findByUsername('kadynskrew')
-
-    # list = flickr.people.getPhotos(:user_id => 'kadynskrew', :perpage => '20', :page => 1)
-    logger.info(kadyn)
     erb :photos
 end
 
 
 
 get '/blog' do
-    feed = Feedzirra::Feed.fetch_and_parse("http://koyandkadyn.blogspot.com/feeds/posts/default")
-    logger.info(feed.title);
-    logger.info(feed.entries.count);
-    @entries = feed.entries[0..4]
     erb :blog
 end
+
+def get_feed
+    feed = Feedzirra::Feed.fetch_and_parse("http://koyandkadyn.blogspot.com/feeds/posts/default")
+    @entries = feed.entries
+end
+
+def get_photos
+    user = Fleakr.user('kadynskrew')
+    @photos = user.photos
+end
+
+
+
 
 # get '/donate' do 
 #     erb :coming_soon

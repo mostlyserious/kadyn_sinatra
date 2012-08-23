@@ -1,7 +1,7 @@
 <article class="furly">
     <section class="block">
         <div class="left col">
-            <% @entries.each do |entry| %>
+            <% @entries[0..4].each do |entry| %>
             <div class="post">
                 <div class="post_head">
                     <h3><%=entry.title %></h3>
@@ -14,32 +14,10 @@
                 </div>
             </div>
             <% end %>
-            <div class="post">
-                <div class="post_head">
-                    <h3>Blog Post Title</h3>
-                </div>
-                <div>
-                    <p>Maecenas quis tortor arcu. Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh. </p>
-
-                    <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula egestas tincidunt. Nullam.</p>
-                </div>
-            </div>
-            
         </div>
         <div class="right col">
             <h3>Come Join Kadyn's Krew</h3>
-            <div class="small_grid">
-                <a href="#"><img src="http://placehold.it/105"/></a>
-                <a href="#"><img src="http://placehold.it/105"/></a>
-                <a href="#"><img src="http://placehold.it/105"/></a>
-                <a href="#"><img src="http://placehold.it/105"/></a>
-                <a href="#"><img src="http://placehold.it/105"/></a>
-                <a href="#"><img src="http://placehold.it/105"/></a>
-                <a href="#"><img src="http://placehold.it/105"/></a>
-                <a href="#"><img src="http://placehold.it/105"/></a>
-                <a href="#"><img src="http://placehold.it/105"/></a>
-                <a href="#"><img src="http://placehold.it/105"/></a>
-            </div>
+            <%=partial(:smallgrid) %>
         </div>
     </div>
 </article>

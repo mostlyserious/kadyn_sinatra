@@ -1,0 +1,5 @@
+<section class="block grid">
+    <% @photos.each do |photo| %>
+    <a href="#"><img src="<%=photo.small.url%>"/></a>
+    <% end %>
+</section>

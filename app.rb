@@ -32,7 +32,9 @@ get '/photos' do
     erb :photos
 end
 
-
+get '/donate' do 
+    redirect 'https://www.cff.org/great_strides/GenericDonation/?GSAppealCode=GWMTGS0312&idUI=347089&idVolunteer=1871334&walkid=7950'
+end
 
 get '/blog' do
     erb :blog

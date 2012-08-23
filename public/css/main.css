@@ -189,11 +189,13 @@ section.title p {
 .grid a {
 	margin: 0 0 3px 0;
 	padding: 0;
-	display: inline-block;
+	display: block;
 	width: 192px;
 	height: 192px;
 	overflow: auto;
 	text-align: center;
+	float: left;
+	margin-right: 3px;
 }
 
 .grid a img {

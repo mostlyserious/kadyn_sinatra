@@ -1,0 +1,259 @@
+/* @override http://localhost:8080/css/main.css */
+
+/* @override http://localhost:8080/css/main.css */
+a {
+	text-decoration: none;
+	color: #5d5d5d;
+}
+
+* {
+	font-family: "myriad-pro",sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+}
+
+h1, h2, h3 {
+	color: #b556eb;
+	font-family: "myriad-pro-condensed",sans-serif;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+h1 {
+	font-size: 36px;
+}
+
+h2 {
+	font-size: 32px;
+	margin: 10px 0;
+}
+
+h3 {
+	font-size: 26px;
+	margin: 10px 0;
+}
+
+h4 {
+	font-size: 18px;
+	font-weight: 700;
+	margin: 0 0 10px 0;
+}
+
+body {
+	margin: 130px 0 70px;
+	color: #5d5d5d;
+}
+
+header {
+	background-image: url(/img/header_bg.jpg);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 82px;
+}
+
+header nav {
+	margin: 0 auto;
+	width: 1200px;
+}
+
+header nav h1#main_logo {
+	float: left;
+	margin: 15px;
+	text-transform: uppercase;
+}
+
+#main_logo a {
+	font-size: 32px;
+	font-family: "cubano", sans-serif;	
+}
+
+header a {
+	color: #fff !important;
+}
+
+header nav ul {
+	margin: 32px;
+	float: right;
+}
+
+header nav ul li {
+	display: inline;
+	margin-left: 40px;
+	padding-left: 30px;
+	font-size: 16px;
+	color: #efefef;
+}
+
+header nav ul li a {
+	text-transform: uppercase;
+	font-family: "myriad pro", sans-serif;
+	font-weight: 700;
+}
+
+li.about {
+	background: url(/img/icns/icn_about.png) no-repeat 0 0;
+}
+li.events {
+	background: url(/img/icns/icn_cal.png) no-repeat 0 0;
+}
+
+li.photos {
+	background: url(/img/icns/icn_photos.png) no-repeat 0 0;	
+}
+li.blog {
+	background: url(/img/icns/icn_blog.png) no-repeat 0 0;
+}
+li.donate {
+	background: url(/img/icns/icn_card.png) no-repeat 0 0;
+}
+
+article {
+	width: 100%;
+	padding-bottom: 40px;
+}
+
+.furly {
+	background-image: url(/img/furly_bg.png);
+	border-top: 1px solid #ccc;
+	overflow: auto;
+}
+
+section.title {
+	margin: 20px 0;
+	background: url(/img/heading_bg.jpg) repeat-x 0 42px;
+}
+
+section.title h1 {
+	background: #fff;
+	text-indent: 2px;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0 10px 0 0;
+	display: inline-block;
+	font-size: 62px;
+}
+
+section.title p {
+	text-align: center;
+	color: #8c8c8c;
+	font-size: 18px;
+	margin-top: 0 !important;
+}
+
+.block {
+	width: 980px;
+	margin: 20px auto;
+	overflow: auto;
+}
+
+.grid {
+	margin: 20px auto 0;
+}
+
+.grid a {
+	margin: 0 0 3px 0;
+	padding: 0;
+	display: inline-block;
+}
+
+.grid a img {
+	margin 0;
+	padding: 0;
+}
+
+.small_grid a {
+	display: inline-block;
+	margin: 2px 0;
+}
+
+a.twitter {
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	background: url(/img/icns/icn_twitter.png) no-repeat;
+}
+
+a.fb {
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	background: url(/img/icns/icn_facebook.png) no-repeat;
+}
+
+li.space {
+	width: 50px;
+	display: inline-block;
+}
+
+footer {
+	overflow: auto;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	height: 80px;
+}
+
+p.ms_colophon.right {
+	text-transform: uppercase;
+	font-size: 12px;
+	color: #8c8c8c;
+	margin: 20px;
+}
+
+footer nav {
+	overflow: auto;
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+}
+
+footer ul {
+	padding-left: 20px;
+	margin-top: 20px;
+}
+
+footer ul li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+footer ul li a {
+	display: inline-block;
+	line-height: 24px;
+}
+
+footer ul li a img {
+	vertical-align: bottom;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.col {
+	width: 450px;
+}
+
+th {
+	text-align: left;
+}
+
+td {
+	border: 1px solid #ccc;
+	width: 136px;
+	height: 170px;
+	
+}
+
+td p {
+	margin: 0;
+}
+
+td p.evt {
+	color: #3c9bc7;
+}

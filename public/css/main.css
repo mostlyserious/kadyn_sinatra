@@ -150,6 +150,38 @@ section.title p {
 	overflow: auto;
 }
 
+.banner {
+	position: relative;
+}
+
+.banner a.banner_link {
+	position: absolute;
+	font-family: "cubano", sans-serif;
+	font-size: 24px;
+	color: #fff;
+	text-align: center;
+	width: 191px;
+	height: 146px;
+}
+
+.banner a#learnmore {
+	top: 0px;
+	left: 385px;
+	padding-top: 45px;
+}
+
+.banner a#events {
+	top: 192px;
+	left: 576px;
+	padding-top: 45px;
+}
+
+.banner a#donate {
+	top: 386px;
+	left: 192px;
+	padding-top: 45px;
+}
+
 .grid {
 	margin: 20px auto 0;
 }

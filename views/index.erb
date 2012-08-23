@@ -5,12 +5,17 @@
             <p class="page_sub">Time Heals All Wounds. Yours Can Help Heal Cystic Fibrosis. Get Involved Today.</p>
         </div>        
     </section>
-    <%=partial(:photogrid) %>
+    <section class="block banner">
+        <img src="/img/home_banner.jpg" />
+        <a href="/about" class="banner_link" id="learnmore">Learn more about kadyn's krew</a>
+        <a href="/about" class="banner_link" id="events">Check out upcoming events</a>
+        <a href="/about" class="banner_link" id="donate">Donate to kadyn's krew today</a>
+    </section>
 </article>
 <article class="furly">
     <section class="block">
         <div class="left col">
-            <% @entries[0..3].each do |entry| %>
+            <% @entries[0..2].each do |entry| %>
             <div class="post">
                 <div class="post_head">
                     <h3><%=entry.title %></h3>

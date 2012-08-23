@@ -1,6 +1,9 @@
 GEM
   remote: http://rubygems.org/
   specs:
+    atom-tools (2.0.5)
+    blogger (0.5.1)
+      atom-tools (>= 2.0.1)
     rack (1.4.1)
     rack-protection (1.2.0)
       rack
@@ -14,4 +17,5 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  blogger
   sinatra

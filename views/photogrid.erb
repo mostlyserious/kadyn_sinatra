@@ -1,5 +1,5 @@
 <section class="block grid">
     <% @photos.each do |photo| %>
-    <a href="#"><img src="<%=photo.small.url%>"/></a>
+    <a href="<%=photo.original.url%>" rel="lightbox[photogrid]"><img src="<%=photo.small.url%>"/></a>
     <% end %>
 </section>

@@ -1,5 +1,5 @@
 <div class="small_grid">
     <% @photos.each do |photo| %>
-    <a href="#"><img src="<%=photo.square.url%>"/></a>
+    <a href="<%=orig_img(photo)%>" rel="lightbox[photogrid]"><img src="<%=sq_img(photo)%>"/></a>
     <% end %>
 </div>

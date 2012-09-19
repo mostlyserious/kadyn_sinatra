@@ -1,4 +1,4 @@
 source :rubygems
 gem 'sinatra'
-gem 'fleakr'
+gem 'flickraw-cached'
 gem 'feedzirra'

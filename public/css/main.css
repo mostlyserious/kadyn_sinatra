@@ -1,8 +1,5 @@
 /* @override http://localhost:9393/css/main.css */
 
-/* @override http://localhost:8080/css/main.css */
-
-/* @override http://localhost:8080/css/main.css */
 a {
 	text-decoration: none;
 	color: #5d5d5d;
@@ -53,6 +50,7 @@ header {
 	left: 0;
 	width: 100%;
 	height: 82px;
+	z-index: 10;
 }
 
 header nav {
@@ -152,6 +150,7 @@ section.title p {
 
 .banner {
 	position: relative;
+	overflow: hidden;
 }
 
 .banner a.banner_link {

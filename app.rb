@@ -1,13 +1,25 @@
 require 'sinatra'
 require 'feedzirra'
-require 'fleakr'
+require 'flickraw-cached'
 
-Fleakr.api_key="86f6c95a16cf6cdcac6451dbcecc277b"
-# Fleakr.shared_secret="cb480187baea7c95"
+FlickRaw.api_key="86f6c95a16cf6cdcac6451dbcecc277b"
+FlickRaw.shared_secret="cb480187baea7c95"
 
 helpers do
     def partial (template, locals = {})
       erb(template, :layout => false, :locals => locals)
+    end
+
+    def sq_img(info)
+        FlickRaw.url_s(info)
+    end
+
+    def bigsq_img(info)
+        FlickRaw.url_q(info)
+    end
+
+    def orig_img(info)
+        FlickRaw.url_b(info)
     end
 end
 
@@ -43,11 +55,11 @@ end
 def get_feed
     feed = Feedzirra::Feed.fetch_and_parse("http://koyandkadyn.blogspot.com/feeds/posts/default")
     @entries = feed.entries
+
 end
 
 def get_photos
-    user = Fleakr.user('kadynskrew')
-    @photos = user.photos
+    @photos = flickr.people.getPublicPhotos(:user_id => '81955649@N04')
 end
 
 
